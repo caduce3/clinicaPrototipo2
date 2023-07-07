@@ -1,0 +1,34 @@
+.navigations {
+    color: #86AE8E;
+    padding: 5px;
+    border-radius: 14px;
+    margin-top: 10px;
+}
+
+.navigations:hover {
+    color: white;
+    background-color: #86AE8E;
+}
+
+#button-wpp {
+    display: flex;
+    flex-direction: row;
+    background-color: #86AE8E;
+    font-weight: 600;
+    width: 170px;
+    height: 49px;
+    border-radius: 14px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.icon-wpp {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+#button-wpp p {
+    margin-left: 10px;
+    margin-top: 15px;
+}
