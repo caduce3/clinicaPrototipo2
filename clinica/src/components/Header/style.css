@@ -1,0 +1,27 @@
+#secao1-inicial h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    width: 400px;
+    margin-bottom: 3%;
+}
+
+#secao1-inicial p {
+    width: 450px;
+    font-weight: 300;
+    margin-bottom: 3%;
+    font-size: 1.2rem;
+}
+
+#secao1-inicial button {
+    color: white;
+    background-color: #86AE8E;
+    width: 400px;
+    height: 50px;
+    border-radius: 14px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 3%;
+}
+
