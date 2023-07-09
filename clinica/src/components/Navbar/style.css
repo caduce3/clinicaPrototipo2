@@ -32,3 +32,16 @@
     margin-left: 10px;
     margin-top: 15px;
 }
+
+.links-menu {
+    color: #86AE8E;
+}
+
+#div-geral-links {
+    width: 100%;
+}
+
+#testea {
+    display: flex;
+    justify-content: space-around;
+}

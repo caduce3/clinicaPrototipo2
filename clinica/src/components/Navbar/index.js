@@ -34,30 +34,28 @@ export default function index() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex flex-1  justify-between sm:items-stretch sm:justify-between">
-                <div className="hidden sm:ml-6 sm:block">
-                  <div className="flex space-x-4">
-                    {navigation.map((item) => (
-                      <a
-                        
-                        key={item.name}
-                        href={item.href}
-                        className='navigations'
-                        aria-current={item.current ? 'page' : undefined}
-                      >
-                        {item.name}
-                        
-                      </a>
-                    ))}
+              <div id='div-geral-links'>
+                <div className="hidden sm:ml-6 sm:block" id='testea'>
+                  <div className="links-menu">
+                    <a href='#'>Início</a>
                   </div>
+                  <div className="links-menu">
+                    <a href='#'>Serviços</a>
+                  </div>
+                  <div className="links-menu">
+                    <a href='#'>Serviços</a>
+                  </div>
+                  <div className="links-menu">
+                    <a href='#'>Serviços</a>
+                  </div>
+                  <a href="https://github.com/caduce3" target='_blank'> 
+                    <button id='button-wpp'>
+                      <BsWhatsapp color='#FFFFFF' className='icon-wpp'/>
+                      <p>Agendar</p>
+                    </button>
+                  </a>
                 </div>
               </div>
-              <button id='button-wpp'>
-                <a href='https://github.com/caduce3' target='_blank'>
-                    <BsWhatsapp color='#FFFFFF' className='icon-wpp'/>
-                </a>
-                <p>Agendar</p>
-              </button>
             </div>
           </div>
 
