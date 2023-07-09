@@ -43,10 +43,10 @@ export default function index() {
                     <a href='#'>Serviços</a>
                   </div>
                   <div className="links-menu">
-                    <a href='#'>Serviços</a>
+                    <a href='#'>Clínicas</a>
                   </div>
                   <div className="links-menu">
-                    <a href='#'>Serviços</a>
+                    <a href='#'>Exames</a>
                   </div>
                   <a href="https://github.com/caduce3" target='_blank'> 
                     <button id='button-wpp'>

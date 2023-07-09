@@ -35,6 +35,14 @@
 
 .links-menu {
     color: #86AE8E;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.links-menu:hover {
+    color: white;
+    background-color: #86AE8E;
+    border-radius: 14px;
 }
 
 #div-geral-links {
@@ -44,4 +52,10 @@
 #testea {
     display: flex;
     justify-content: space-around;
+}
+
+@media (max-width: 640px) {
+    .links-menu{
+        display: none;
+    }
 }
