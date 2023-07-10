@@ -4,7 +4,7 @@ import Image from 'next/image';
 import CardCircle from '../CardCircle/CardCircle';
 import './style.css';
 
-function index() {
+function Main() {
 
     const [windowWidth, setWindowWidth] = useState(0);
 
@@ -74,4 +74,4 @@ function index() {
   )
 }
 
-export default index;
+export default Main;
