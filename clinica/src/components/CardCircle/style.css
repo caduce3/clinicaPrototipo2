@@ -1,0 +1,26 @@
+#cardCricle {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: 5% 0 0 100px;
+}
+
+#circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #86AE8E;
+  margin: auto;
+  margin-bottom: 15px;
+  
+}
+
+#cardCricle p {
+    color: black;
+}
+
+#cardCricle h3 {
+    color: #86AE8E;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
