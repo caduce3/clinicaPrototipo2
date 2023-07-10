@@ -1,9 +1,28 @@
-import React from 'react'
+'use client'
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import CardCircle from '../CardCircle/CardCircle';
 import './style.css';
 
 function index() {
+
+    const [windowWidth, setWindowWidth] = useState(0);
+
+    useEffect(() => {
+        function handleResize() {
+        setWindowWidth(window.innerWidth);
+        }
+
+        handleResize();
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+        window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    const conditionalStyle = windowWidth <= 960 ? { top: '280%', left: '47%', transform: 'translate(-50%, -50%)' } : { top: '200%', left: '54%', transform: 'translateY(-50%)' };
+
   return (
     <main>
         <section style={{ position: 'relative', width: '100%', height: '100vh' }}>
@@ -36,7 +55,7 @@ function index() {
                     Lorem ipsum dolor sit amet <br/> consectetur. Dui ultricies iaculis et <br/> morbi. Fringilla cursus scelerisque <br/> vestibulum facilisi blandit rutrum. <br/> Mauris etiam amet amet
                 </p>
             </div>
-            <div style={{ position: 'absolute', top: '200%', left: '54%', transform: 'translateY(-50%)', }}>
+            <div style={{ position: 'absolute', ...conditionalStyle }} id='div-cardsCircles'>
                 <div style={{display: 'flex'}}>
                     <CardCircle />
                     <CardCircle />

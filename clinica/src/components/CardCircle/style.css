@@ -24,3 +24,10 @@
     font-weight: 700;
     font-size: 1.3rem;
 }
+
+@media (max-width: 1310px) {
+    #cardCricle{
+        margin-left: 10%;
+    }
+}
+

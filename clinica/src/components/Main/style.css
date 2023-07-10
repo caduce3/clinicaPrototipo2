@@ -80,12 +80,24 @@
     }
 }
 
-.circleOnes {
-    margin-left: 1200px;
-}
-  
-  @media (max-width: 1160px) {
+@media (max-width: 960px) {
     #section2-main {
-      grid-template-columns: 1fr;
+        height: 220vh;
     }
-  }
+    #section2-main-div-inicial{
+        margin-left: 22%;
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 910px) {
+    #section2-main-div-inicial{
+        margin-left: 20%;
+    }
+}
+
+@media (max-width: 690px) {
+    #section2-main-div-inicial{
+        margin-left: 10%;
+    }
+}
