@@ -24,7 +24,12 @@
     font-weight: 600;
 }
 
-@media (max-width : 560px) {
+@media (max-width: 560px) {
+    #secao1-inicial h1 {
+        width: 250px;
+        font-size: 2rem;
+    }
+
     #secao1-inicial p {
         width: 350px;
         font-size: 1rem;
@@ -34,16 +39,11 @@
         width: 250px;
         font-size: 1.1rem;
     }
-    #secao1-inicial h1 {
-        width: 250px;
-        font-size: 2rem;
-    }
 }
 
 #section2-main {
     background-color: #fff;
     color: #86AE8E;
-    height: 100%;
     padding-left: 10%;
     display: flex;
     justify-content: space-between;
@@ -76,52 +76,30 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
 }
 
-@media (max-width: 950px){
+@media (max-width: 950px) {
     #section2-main {
         flex-direction: column;
         align-items: center;
-      }
-      
-      #section2-main-div-inicial {
+    }
+
+    #section2-main-div-inicial {
         width: 100%;
-      }
-      
-      #div-cardsCircles {
+    }
+
+    #div-cardsCircles {
         width: 100%;
         align-self: center;
-      }
-      
-}
-
-@media (max-width : 560px) {
-    #section2-main-div-inicial p {
-        width: 350px;
-        font-size: 1rem;
-    }
-    #section2-main-div-inicial h2 {
-        width: 250px;
-        font-size: 2rem;
-    }
-    #section2-main {
-        padding-left: 4.5rem;
     }
 }
 
-@media (max-width: 960px) {
-    #section2-main {
-        height: 220vh;
-    }
-}
-
-//AJUSTE AQUI PARA 480PX
 @media (max-width: 690px) {
     #section2-main-div-inicial p {
         width: 350px;
         font-size: 1rem;
     }
+
     #section2-main-div-inicial h2 {
         width: 250px;
         font-size: 2rem;
@@ -133,18 +111,17 @@
         width: 100vw;
         font-size: 1rem;
     }
+
     #section2-main-div-inicial h2 {
         width: 100vw;
         font-size: 1.5rem;
     }
 }
 
-
 #section3-main {
     background-color: #86AE8E;
     color: #86AE8E;
-    height: 100%;
-    //height: 125vh;
+    padding-bottom: 5%;
 }
 
 #section3-main h2 {
@@ -155,16 +132,13 @@
 #section3-p2-main {
     margin-left: 10%;
     margin-right: 10%;
-    padding-bottom: 5%;
 }
 
-
-
 @media (max-width: 945px) {
-
     #paragrafo-section3-main {
         font-size: 1rem;
     }
+
     #section3-p2-main h2 {
         font-size: 2rem;
     }
@@ -173,7 +147,5 @@
 @media (max-width: 630px) {
     #cardQuadrado-secao3 {
         flex-direction: column;
-
     }
-
 }

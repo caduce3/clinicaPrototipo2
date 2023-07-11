@@ -10,7 +10,7 @@ function Main() {
   return (
     <main className="w-full">
         <section style={{ position: 'relative', height: '100vh' }} className="w-full">
-            <div style={{ width: '100%', height: '140%', position: 'absolute', top: 0, left: 0 }}>
+            <div style={{ width: '100vw', height: '140%', position: 'absolute', top: 0, left: 0 }}>
                 <Image src="/doutores.png" alt="Dois médicos sorrindo" layout="fill" objectFit="cover" />
             </div>
             <div style={{ position: 'absolute', top: '70%', left: '8%', transform: 'translateY(-50%)', padding: '2rem' }}>
