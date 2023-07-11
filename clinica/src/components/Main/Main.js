@@ -78,7 +78,7 @@ function Main() {
                 <CardQuadrado />
                 <CardQuadrado />
             </div>
-            <div id='section3-p2-main' style={{position: 'absolute', left: '10%', right: '10%' }}>
+            <div id='section3-p2-main' >
                 <h2 className='text-white mt-10 mb-5'>
                     Lorem ipsum dolor sit <br/>
                     amet consectetur.

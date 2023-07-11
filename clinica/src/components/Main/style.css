@@ -106,12 +106,18 @@
 #section3-main {
     background-color: #86AE8E;
     color: #86AE8E;
-    height: 125vh;
+    //height: 125vh;
 }
 
 #section3-main h2 {
     font-weight: 700;
     font-size: 2.5rem;
+}
+
+#section3-p2-main {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 5%;
 }
 
 @media (max-width: 1300px) {
