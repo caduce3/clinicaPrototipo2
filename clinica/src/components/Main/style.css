@@ -87,21 +87,13 @@
         height: 220vh;
     }
     #section2-main-div-inicial{
-        margin-left: 20%;
-        
+        margin: auto;
+  
     }
 }
 
-@media (max-width: 910px) {
-    #section2-main-div-inicial{
-        margin-left: 20%;
-    }
-}
 //AJUSTE AQUI PARA 480PX
 @media (max-width: 690px) {
-    #section2-main-div-inicial{
-        margin-left: 10%;
-    }
     #section2-main-div-inicial p {
         width: 350px;
         font-size: 1rem;
@@ -112,9 +104,14 @@
     }
 }
 
-@media (max-width: 690px) {
-    #section2-main-div-inicial{
-        margin-left: 10%;
+@media (max-width: 480px) {
+    #section2-main-div-inicial p {
+        width: 100vw;
+        font-size: 1rem;
+    }
+    #section2-main-div-inicial h2 {
+        width: 100vw;
+        font-size: 1.5rem;
     }
 }
 
