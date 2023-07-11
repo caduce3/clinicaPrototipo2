@@ -137,3 +137,14 @@
         height: 180vh;
     }
 }
+
+@media (max-width: 550px) {
+    #section3-main{
+        height: 200vh;
+    }
+}
+@media (max-width: 450px) {
+    #section3-main{
+        height: 210vh;
+    }
+}
