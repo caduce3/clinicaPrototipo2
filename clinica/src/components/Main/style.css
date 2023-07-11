@@ -151,3 +151,9 @@
         height: 210vh;
     }
 }
+
+@media (max-width: 445px) {
+    #section3-main{
+        height: 220vh;
+    }
+}
