@@ -2,6 +2,7 @@
     width: 220px;
     height: 200px;
     text-align: center;
+    margin: auto;
 }
 
 #circle {
@@ -26,7 +27,6 @@
 
 @media (max-width: 1370px) {
     #cardCricle{
-        margin-left: 10%;
         width: 200px;
     }
     #circle {
