@@ -122,6 +122,7 @@
 #section3-main {
     background-color: #86AE8E;
     color: #86AE8E;
+    height: 100%;
     //height: 125vh;
 }
 
@@ -136,16 +137,10 @@
     padding-bottom: 5%;
 }
 
-@media (max-width: 1300px) {
-    #section3-main{
-        height: 135vh;
-    }
-}
+
 
 @media (max-width: 945px) {
-    #section3-main{
-        height: 135vh;
-    }
+
     #paragrafo-section3-main {
         font-size: 1rem;
     }
@@ -158,9 +153,6 @@
     #cardQuadrado-secao3 {
         flex-direction: column;
 
-    }
-    #section3-main{
-        height: 100%;
     }
 
 }
