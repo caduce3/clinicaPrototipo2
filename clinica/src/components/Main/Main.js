@@ -47,7 +47,7 @@ function Main() {
         </section>
 
         <section  style={{ marginTop: '30vh', }} id='section2-main'>
-            <div id='section2-main-div-inicial' style={{ position: 'absolute', top: '195%',  left: '10%',  transform: 'translateY(-50%)' }}>
+            <div id='section2-main-div-inicial' >
                 <h2>
                     Lorem ipsum dolor sit <br/>
                     amet consectetur.
