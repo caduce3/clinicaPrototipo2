@@ -127,6 +127,9 @@
     #paragrafo-section3-main {
         font-size: 1rem;
     }
+    #section3-p2-main h2 {
+        font-size: 2rem;
+    }
 }
 
 @media (max-width: 630px) {
