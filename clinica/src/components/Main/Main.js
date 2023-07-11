@@ -8,7 +8,7 @@ import './style.css';
 function Main() {
 
   return (
-    <main style={{ width: '100%' }}>
+    <main style={{ width: '100vw' }}>
         <section style={{ position: 'relative', width: '100%', height: '100vh' }}>
             <div style={{ width: '100%', height: '140%', position: 'absolute', top: 0, left: 0 }}>
                 <Image src="/doutores.png" alt="Dois médicos sorrindo" layout="fill" objectFit="cover" />
