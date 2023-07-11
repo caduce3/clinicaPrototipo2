@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import CardCircle from '../CardCircle/CardCircle';
+import CardQuadrado from '../CardQuadrado/CardQuadrado';
 import './style.css';
 
 function Main() {
@@ -68,6 +69,23 @@ function Main() {
                     <CardCircle />
                     <CardCircle />
                 </div>
+            </div>
+        </section>
+
+        <section  id='section3-main' >
+            <div style={{display: 'flex', paddingTop: "8%"}} id='cardQuadrado-secao3'>
+                <CardQuadrado />
+                <CardQuadrado />
+                <CardQuadrado />
+            </div>
+            <div id='section3-p2-main' style={{position: 'absolute', left: '10%', right: '10%' }}>
+                <h2 className='text-white mt-10 mb-5'>
+                    Lorem ipsum dolor sit <br/>
+                    amet consectetur.
+                </h2>
+                <p className='text-white text-xl text-justify' id='paragrafo-section3-main'>
+                    Lorem ipsum dolor sit amet consectetur. Dui ac lacus risus elit tellus integer placerat massa. Velit felis suscipit ut sit. Faucibus amet eros cursus lectus nibh pellentesque ac euismod. Nulla nisl sapien sit pellentesque lorem tortor cursus vitae dolor. Dolor eu aliquam mattis scelerisque vivamus suscipit magna orci adipiscing. Id et imperdiet turpis vel ac massa lorem et et. Pellentesque tellus nisl tincidunt nisl bibendum pretium vitae egestas. Ipsum condimentum et purus faucibus quam lorem condimentum morbi. Sit facilisi in vulputate arcu. Suscipit curabitur tellus ac et orci lorem nunc. Purus pharetra eleifend tristique ornare. Suspendisse sed eu est sit vitae non. Sed imperdiet in tortor ullamcorper. Eget a ac nulla auctor nibh egestas. Cursus quis mi massa ultricies volutpat dolor suspendisse lacus tempus. Arcu dolor morbi quis aliquet vestibulum. Fermentum sem volutpat sed fringilla.
+                </p>
             </div>
         </section>
     </main>

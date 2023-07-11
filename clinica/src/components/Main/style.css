@@ -101,3 +101,39 @@
         margin-left: 10%;
     }
 }
+
+
+#section3-main {
+    background-color: #86AE8E;
+    color: #86AE8E;
+    height: 125vh;
+}
+
+#section3-main h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+@media (max-width: 1300px) {
+    #section3-main{
+        height: 135vh;
+    }
+}
+
+@media (max-width: 945px) {
+    #section3-main{
+        height: 135vh;
+    }
+    #paragrafo-section3-main {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 630px) {
+    #cardQuadrado-secao3 {
+        flex-direction: column;
+    }
+    #section3-main{
+        height: 180vh;
+    }
+}
