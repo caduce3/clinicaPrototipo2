@@ -31,6 +31,39 @@ function Main() {
         };
     }, []);
 
+    const [windowWidth2, setWindowWidth2] = useState(0);
+
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+        setWindowWidth2(window.innerWidth);
+        }
+
+        const handleResize = () => {
+        if (typeof window !== 'undefined') {
+            setWindowWidth2(window.innerWidth);
+        }
+        };
+
+        if (typeof window !== 'undefined') {
+        window.addEventListener('resize', handleResize);
+        }
+
+        return () => {
+        if (typeof window !== 'undefined') {
+            window.removeEventListener('resize', handleResize);
+        }
+        };
+    }, []);
+
+    useEffect(() => {
+        // Impede a rolagem horizontal no eixo X em dispositivos móveis
+        if (windowWidth2 < 560) {
+        document.body.style.overflowX = 'hidden';
+        } else {
+        document.body.style.overflowX = 'auto';
+        }
+    }, [windowWidth2]);
+
   return (
     <main>
         <section style={{ position: 'relative', height: '100vh' }}>
