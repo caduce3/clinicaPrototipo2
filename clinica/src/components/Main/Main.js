@@ -7,20 +7,22 @@ import './style.css';
 
 function Main() {
 
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    const [windowWidth, setWindowWidth] = useState(0);
 
     useEffect(() => {
-      // Atualiza o estado do windowWidth quando a janela for redimensionada
-      const handleResize = () => {
+        if (typeof window !== 'undefined') {
         setWindowWidth(window.innerWidth);
-      };
-  
-      window.addEventListener('resize', handleResize);
-  
-      // Limpa o event listener quando o componente é desmontado
-      return () => {
+        }
+
+        const handleResize = () => {
+        setWindowWidth(window.innerWidth);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
         window.removeEventListener('resize', handleResize);
-      };
+        };
     }, []);
 
   return (
