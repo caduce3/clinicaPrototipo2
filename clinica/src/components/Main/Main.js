@@ -7,13 +7,29 @@ import './style.css';
 
 function Main() {
 
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+      // Atualiza o estado do windowWidth quando a janela for redimensionada
+      const handleResize = () => {
+        setWindowWidth(window.innerWidth);
+      };
+  
+      window.addEventListener('resize', handleResize);
+  
+      // Limpa o event listener quando o componente é desmontado
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }, []);
+
   return (
     <main>
         <section style={{ position: 'relative', height: '100vh' }}>
             <div style={{ width: '100vw', height: '140%', position: 'absolute', top: 0, left: 0 }}>
                 <Image src="/doutores.png" alt="Dois médicos sorrindo" layout="fill" objectFit="cover" />
             </div>
-            <div style={{ position: 'absolute', top: '70%', left: '8%', transform: 'translateY(-50%)', padding: '2rem' }}>
+            <div style={{ position: 'absolute', top: '70%', left: '8%', transform: 'translateY(-50%)', padding: windowWidth >= 560 ? '2rem' : '0' }}>
                 <section id="secao1-inicial">
                 <h1>
                     Lorem ipsum <br />
