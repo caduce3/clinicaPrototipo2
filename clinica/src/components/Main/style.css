@@ -123,10 +123,21 @@
     }
 }
 
+#div-da-imagem{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+
 #section3-main {
     background-color: #86AE8E;
     color: #86AE8E;
     padding-bottom: 5%;
+    width: 100vw;
 }
 
 #section3-main h2 {

@@ -26,7 +26,7 @@ function Main() {
   return (
     <main>
         <section style={{ position: 'relative', height: '100vh' }}>
-            <div style={{ width: '100vw', height: '140%', position: 'absolute', top: 0, left: 0 }}>
+            <div id='div-da-imagem'>
                 <Image src="/doutores.png" alt="Dois médicos sorrindo" layout="fill" objectFit="cover" />
             </div>
             <div style={{ position: 'absolute', top: '70%', left: '8%', transform: 'translateY(-50%)', padding: windowWidth >= 560 ? '2rem' : '0' }}>
