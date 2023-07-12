@@ -10,3 +10,8 @@ body {
   font-family: 'Poppins', sans-serif;
   width: 100%;
 }
+
+html {
+  width: 100vw;
+  overflow-x: hidden;
+}
