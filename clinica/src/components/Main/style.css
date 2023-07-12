@@ -4,6 +4,7 @@
     line-height: 1.2;
     width: 400px;
     margin-bottom: 10%;
+    color: white;
 }
 
 #secao1-inicial p {
@@ -11,6 +12,7 @@
     font-weight: 300;
     margin-bottom: 10%;
     font-size: 1.2rem;
+    color: white;
 }
 
 #secao1-inicial button {

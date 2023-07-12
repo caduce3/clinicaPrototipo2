@@ -8,8 +8,8 @@ import './style.css';
 function Main() {
 
   return (
-    <main className="w-full">
-        <section style={{ position: 'relative', height: '100vh' }} className="w-full">
+    <main>
+        <section style={{ position: 'relative', height: '100vh' }}>
             <div style={{ width: '100vw', height: '140%', position: 'absolute', top: 0, left: 0 }}>
                 <Image src="/doutores.png" alt="Dois médicos sorrindo" layout="fill" objectFit="cover" />
             </div>
@@ -29,7 +29,7 @@ function Main() {
             </div>
         </section>
 
-        <section  style={{ marginTop: '30vh', }} id='section2-main' className="w-full">
+        <section  style={{ marginTop: '30vh', }} id='section2-main'>
             <div id='section2-main-div-inicial' >
                 <h2>
                     Lorem ipsum dolor sit <br/>
@@ -55,7 +55,7 @@ function Main() {
             </div>
         </section>
 
-        <section  id='section3-main' className="w-full">
+        <section  id='section3-main'>
             <div style={{display: 'flex', paddingTop: "8%"}} id='cardQuadrado-secao3'>
                 <CardQuadrado />
                 <CardQuadrado />

@@ -18,7 +18,7 @@ function classNames(...classes) {
 
 export default function index() {
   return (
-    <Disclosure as="nav" className="bg-zinc-50 fixed w-full z-10">
+    <Disclosure as="nav" className="bg-zinc-50 fixed z-10" id='disclosure'>
       {({ open }) => (
         <>
           <div className=" sm:px-6 ">
