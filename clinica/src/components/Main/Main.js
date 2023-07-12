@@ -15,13 +15,19 @@ function Main() {
         }
 
         const handleResize = () => {
-        setWindowWidth(window.innerWidth);
+        if (typeof window !== 'undefined') {
+            setWindowWidth(window.innerWidth);
+        }
         };
 
+        if (typeof window !== 'undefined') {
         window.addEventListener('resize', handleResize);
+        }
 
         return () => {
-        window.removeEventListener('resize', handleResize);
+        if (typeof window !== 'undefined') {
+            window.removeEventListener('resize', handleResize);
+        }
         };
     }, []);
 
