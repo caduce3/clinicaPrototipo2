@@ -165,3 +165,24 @@
         flex-direction: column;
     }
 }
+
+
+#section4-main{
+    background-color: #4D7473;
+    padding: 5% 10% 5% 10%;
+}
+
+#section4-main h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+@media (max-width: 945px) {
+
+    #section4-main h2 {
+        font-size: 2rem;
+    }
+    #section4-p2-main {
+        flex-direction: column;
+    }
+}
