@@ -104,9 +104,24 @@ function Main() {
             </h2>
             <div style={{display: 'flex', }} id='section4-p2-main'>  
                 <CardImagem src='/dt1.png' alt='Médico 1' titulo='Lorem ipsum' texto='Lorem ipsum dolor'/>
-                <CardImagem src='/dt2.png' alt='Médico 1' titulo='Lorem ipsum' texto='Lorem ipsum dolor'/>
-                <CardImagem src='/dt3.png' alt='Médico 1' titulo='Lorem ipsum' texto='Lorem ipsum dolor'/>
-                <CardImagem src='/dt4.png' alt='Médico 1' titulo='Lorem ipsum' texto='Lorem ipsum dolor'/>
+                <CardImagem src='/dt2.png' alt='Médico 2' titulo='Lorem ipsum' texto='Lorem ipsum dolor'/>
+                <CardImagem src='/dt3.png' alt='Médico 3' titulo='Lorem ipsum' texto='Lorem ipsum dolor'/>
+                <CardImagem src='/dt4.png' alt='Médico 4' titulo='Lorem ipsum' texto='Lorem ipsum dolor'/>
+            </div>
+        </section>
+
+        <section id='section5-main' style={{ display: 'flex', alignItems: 'center', }}>
+            <div>
+                <Image src='/clinicaDentro.png' alt='Doutores' width={730} height={1080}/>
+            </div>
+            <div id='section5-p2-main' style={{ paddingLeft: '5vw', paddingRight: '5vw' }}>
+                <h2>
+                    Lorem ipsum dolor sit <br/>
+                    amet consectetur.
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur. Dui ultricies iaculis et morbi. Fringilla cursus scelerisque vestibulum facilisi blandit rutrum. Mauris etiam amet amet 
+                </p>
             </div>
         </section>
     </main>
