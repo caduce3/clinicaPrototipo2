@@ -40,21 +40,21 @@ function Main() {
             </div>
             <div style={{ position: 'absolute', top: '70%', left: '8%', transform: 'translateY(-50%)', padding: windowWidth >= 560 ? '2rem' : '0' }}>
                 <section id="secao1-inicial">
-                <h1>
-                    Lorem ipsum <br />
-                    dolor sit amet <br />
-                    consectetur. <br />
-                </h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur. Tortor justo diam enim nibh. Tristique nunc quam quam massa. In leo
-                    magnis viverra ullamcorper tincidunt suscipit tellus hac.
-                </p>
-                <button>Lorem ipsum dolor</button>
+                    <h1>
+                        Lorem ipsum <br />
+                        dolor sit amet <br />
+                        consectetur. <br />
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur. Tortor justo diam enim nibh. Tristique nunc quam quam massa. In leo
+                        magnis viverra ullamcorper tincidunt suscipit tellus hac.
+                    </p>
+                    <button>Lorem ipsum dolor</button>
                 </section>
             </div>
         </section>
 
-        <section  style={{ marginTop: '30vh', }} id='section2-main'>
+        <section   id='section2-main'>
             <div id='section2-main-div-inicial' >
                 <h2>
                     Lorem ipsum dolor sit <br/>
