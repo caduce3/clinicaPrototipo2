@@ -6,10 +6,10 @@ import './style.css';
 
 
 const navigation = [
-  { name: 'Início', href: '#', current: false },
-  { name: 'Serviços', href: '#', current: false },
-  { name: 'Clínica', href: '#', current: false },
-  { name: 'Exames', href: '#', current: false },
+  { name: 'Início', href: '#div-da-imagem', current: false },
+  { name: 'Serviços', href: '#section2-main-div-inicial', current: false },
+  { name: 'Clínica', href: '#section3-main', current: false },
+  { name: 'Exames', href: '#section4-main', current: false },
 ]
 
 function classNames(...classes) {
@@ -37,16 +37,16 @@ export default function index() {
               <div id='div-geral-links'>
                 <div className="hidden sm:ml-6 sm:block" id='testea'>
                   <div className="links-menu">
-                    <a href='#'>Início</a>
+                    <a href='#div-da-imagem'>Início</a>
                   </div>
                   <div className="links-menu">
-                    <a href='#'>Serviços</a>
+                    <a href='#section2-main-div-inicial'>Serviços</a>
                   </div>
                   <div className="links-menu">
-                    <a href='#'>Clínicas</a>
+                    <a href='#section3-main'>Clínicas</a>
                   </div>
                   <div className="links-menu">
-                    <a href='#'>Exames</a>
+                    <a href='#section4-main'>Exames</a>
                   </div>
                   <a href="https://github.com/caduce3" target='_blank'> 
                     <button id='button-wpp'>
