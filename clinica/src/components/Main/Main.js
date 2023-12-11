@@ -9,6 +9,8 @@ import './style.css';
 function Main() {
 
     const [windowWidth, setWindowWidth] = useState(0);
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [modalContent, setModalContent] = useState({ title: '', text: '' });
 
     useEffect(() => {
         if (typeof window !== 'undefined') {
@@ -41,15 +43,14 @@ function Main() {
             <div style={{ position: 'absolute', top: '70%', left: '8%', transform: 'translateY(-50%)', padding: windowWidth >= 560 ? '2rem' : '0' }}>
                 <section id="secao1-inicial">
                     <h1>
-                        Lorem ipsum <br />
-                        dolor sit amet <br />
-                        consectetur. <br />
+                        Agende seu exame <br />
+                        na clínica <br />
+                        Endos <br />
                     </h1>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur. Tortor justo diam enim nibh. Tristique nunc quam quam massa. In leo
-                        magnis viverra ullamcorper tincidunt suscipit tellus hac.
+                        Há mais de dez anos realizando exames de endoscopia e colonoscopia diagnóstica e terapêutica em ambiente hospitalar. Não deixe de entrar em contato conosco para tirar suas dúvidas
                     </p>
-                    <button>Lorem ipsum dolor</button>
+                    <button><a href="https://wa.me/5584981188466">Entrar em contato</a></button>
                 </section>
             </div>
         </section>
@@ -57,25 +58,26 @@ function Main() {
         <section   id='section2-main'>
             <div id='section2-main-div-inicial' >
                 <h2>
-                    Lorem ipsum dolor sit <br/>
-                    amet consectetur.
+                    Saiba quais <br/>
+                    exames podem <br/>
+                    ser  realizados
                 </h2>
                 <p>
-                    Lorem ipsum dolor sit amet <br/> consectetur. Dui ultricies iaculis et <br/> morbi. Fringilla cursus scelerisque <br/> vestibulum facilisi blandit rutrum. <br/> Mauris etiam amet amet
+                    Esses exames podem ser agendos em nossa  Unidade em Lagoa Nova, na <strong>Promater</strong> e no Tirol, na <strong>Casa de Saúde São Lucas.</strong>
                 </p>
             </div>
             <div id='div-cardsCircles'>
                 <div style={{display: 'flex'}}>
-                    <CardCircle />
-                    <CardCircle />
+                    <CardCircle subtitulo1="Endoscopia diagnóstica" subtitulo2="e terapêutica"texto="Clique e saiba mais sobre o exame"/>
+                    <CardCircle subtitulo1="Colonoscopia diagnóstica" subtitulo2="e terapêutica"texto="Clique e saiba mais sobre o exame"/>
                 </div>
                 <div style={{display: 'flex'}}>
-                    <CardCircle />
-                    <CardCircle />
+                    <CardCircle subtitulo1="Polipectomia" subtitulo2=""texto="Clique e saiba mais sobre o exame"/>
+                    <CardCircle subtitulo1="Retossigmoidoscopia" subtitulo2=""texto="Clique e saiba mais sobre o exame"/>
                 </div>
                 <div style={{display: 'flex',}}>
-                    <CardCircle />
-                    <CardCircle />
+                    <CardCircle subtitulo1="Cápsula endoscópica" subtitulo2=""texto="Clique e saiba mais sobre o exame"/>
+                    <CardCircle subtitulo1="Ligadura elástica" subtitulo2=""texto="Clique e saiba mais sobre o exame"/>
                 </div>
             </div>
         </section>

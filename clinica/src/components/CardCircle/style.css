@@ -17,12 +17,15 @@
 
 #cardCricle p {
     color: black;
+    
 }
 
 #cardCricle h3 {
     color: #86AE8E;
     font-weight: 700;
     font-size: 1.3rem;
+    width: 300px;
+    margin-left: -40px;
 }
 
 @media (max-width: 1370px) {

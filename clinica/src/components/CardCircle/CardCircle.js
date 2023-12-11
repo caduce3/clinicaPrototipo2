@@ -1,15 +1,16 @@
 import React from 'react'
 import './style.css';
 
-function CardCircle() {
+function CardCircle(props) {
   return (
     <>
       <div id='cardCricle'>
         <div id='circle'> </div>
-        <h3>Lorem ipsum</h3>
+        <h3>{props.subtitulo1} <br></br>
+        {props.subtitulo2}
+        </h3>
         <p>
-          lorem ipsum dolor sit <br/>
-          consectetur. Praesent.
+          {props.texto}
         </p>
       </div>
     </>
