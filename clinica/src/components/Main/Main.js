@@ -5,12 +5,11 @@ import CardCircle from '../CardCircle/CardCircle';
 import CardQuadrado from '../CardQuadrado/CardQuadrado';
 import CardImagem from '../CardImagem/CardImagem';
 import './style.css';
+import Modal from '../Modal/Modal';
 
 function Main() {
-
+    
     const [windowWidth, setWindowWidth] = useState(0);
-    const [isModalOpen, setIsModalOpen] = useState(false);
-    const [modalContent, setModalContent] = useState({ title: '', text: '' });
 
     useEffect(() => {
         if (typeof window !== 'undefined') {
@@ -68,33 +67,93 @@ function Main() {
             </div>
             <div id='div-cardsCircles'>
                 <div style={{display: 'flex'}}>
-                    <CardCircle subtitulo1="Endoscopia diagnóstica" subtitulo2="e terapêutica"texto="Clique e saiba mais sobre o exame"/>
-                    <CardCircle subtitulo1="Colonoscopia diagnóstica" subtitulo2="e terapêutica"texto="Clique e saiba mais sobre o exame"/>
+                    <CardCircle 
+                        subtitulo1="Endoscopia diagnóstica" 
+                        subtitulo2="e terapêutica" 
+                        sub1="Endoscopia digestiva alta diagnóstica e terapêutica" 
+                        sub2="Esse procedimento é frequentemente realizado para avaliar e diagnosticar condições relacionadas ao trato gastrointestinal, como o esôfago, estômago, intestino delgado e cólon. A endoscopia terapêutica é
+                            uma alternativa menos invasiva à cirurgia tradicional, pois é realizada por meio de pequenas incisões ou aberturas naturais no corpo. 
+                            Isso pode reduzir o risco, 
+                            o tempo de recuperação e as complicações associadas aos procedimentos cirúrgicos."
+                    />
+
+                    <CardCircle 
+                        subtitulo1="Colonoscopia diagnóstica" 
+                        subtitulo2="e terapêutica"texto="saiba mais sobre o exame"
+                        sub1="Colonoscopia diagnóstica e terapêutica" 
+                        sub2="Utiliza-se  um tubo flexível com uma câmera para examinar o cólon e o reto, buscando sintomas gastrointestinais ou rastreando condições como o câncer colorretal.
+                        Na terpaeutica, além da visualização, o médico pode realizar intervenções como a remoção de pólipos, controle de sangramentos ou dilatação de áreas estreitas no cólon. É uma extensão da colonoscopia diagnóstica, oferecendo a capacidade de tratar e corrigir problemas identificados durante o exame."
+                    />
                 </div>
                 <div style={{display: 'flex'}}>
-                    <CardCircle subtitulo1="Polipectomia" subtitulo2=""texto="Clique e saiba mais sobre o exame"/>
-                    <CardCircle subtitulo1="Retossigmoidoscopia" subtitulo2=""texto="Clique e saiba mais sobre o exame"/>
+                    <CardCircle 
+                        subtitulo1="Polipectomia" 
+                        subtitulo2=""
+                        texto="saiba mais sobre o exame"
+                        sub1="Polipectomia" 
+                        sub2="A polipectomia é um procedimento realizado 
+                        durante uma colonoscopia para remover pólipos do cólon ou do reto. Os pólipos são crescimentos anormais que se desenvolvem na parede interna do intestino."
+                    />
+                    <CardCircle 
+                        subtitulo1="Retossigmoidoscopia" 
+                        subtitulo2=""
+                        texto="saiba mais sobre o exame"
+                        sub1="Retossigmoidoscopia"
+                        sub2="A retossigmoidoscopia é um procedimento
+                        médico que utiliza um instrumento chamado 
+                       retossigmoidoscópio para visualizar o reto e a 
+                       porção inferior do cólon, conhecida como sigmoide."
+                    />
                 </div>
                 <div style={{display: 'flex',}}>
-                    <CardCircle subtitulo1="Cápsula endoscópica" subtitulo2=""texto="Clique e saiba mais sobre o exame"/>
-                    <CardCircle subtitulo1="Ligadura elástica" subtitulo2=""texto="Clique e saiba mais sobre o exame"/>
+                    <CardCircle 
+                        subtitulo1="Cápsula endoscópica" 
+                        subtitulo2=""
+                        texto="saiba mais sobre o exame"
+                        sub1="Cápsula endoscópica"
+                        sub2="É um pequeno dispositivo em 
+                        forma de cápsula que contém 
+                        uma câmera miniaturizada. 
+                        Ingerida pelo paciente, ela 
+                        percorre o trato digestivo, 
+                        transmitindo imagens para 
+                        um gravador externo. 
+                        Essa tecnologia sem fio oferece 
+                        uma visão detalhada do intestino
+                         delgado, auxiliando no 
+                        diagnóstico de condições 
+                        gastrointestinais sem a
+                         necessidade de procedimentos 
+                        invasivos."
+                    />
+                    <CardCircle 
+                        subtitulo1="Ligadura elástica" 
+                        subtitulo2=""
+                        texto="saiba mais sobre o exame"
+                        sub1="Ligadura elástica"
+                        sub2="A ligadura elástica no esôfago é um procedimento endoscópico 
+                        utilizado para tratar varizes 
+                        esofágicas. Bandas elásticas são aplicadas nas varizes para interromper o sangramento e prevenir complicações associadas a condições como
+                         a hipertensão portal."
+                    />
                 </div>
             </div>
         </section>
 
         <section  id='section3-main'>
             <div style={{display: 'flex', paddingTop: "8%"}} id='cardQuadrado-secao3'>
-                <CardQuadrado />
-                <CardQuadrado />
-                <CardQuadrado />
+                <CardQuadrado subtitulo="Segurança" texto="Estamos localizados dentro de dois hospitais referências em Natal"/>
+                <CardQuadrado subtitulo="Conforto" texto="Nossos pacientes realizam o exame sedados, sem sentir nenhum desconforto"/>
+                <CardQuadrado subtitulo="Equipe" texto="Equipe multidisciplinar com profissionais extremamente competentes"/>
+                <CardQuadrado subtitulo="Equipamentos" texto="Temos equipamentos de ponta para fazer diagnósticos consistentes e assertivos"/>
             </div>
             <div id='section3-p2-main' >
                 <h2 className='text-white mt-10 mb-5'>
-                    Lorem ipsum dolor sit <br/>
-                    amet consectetur.
+                    Conheça os quatro princípios  <br/>
+                    norteadores da Endos
                 </h2>
                 <p className='text-white text-xl text-justify' id='paragrafo-section3-main'>
-                    Lorem ipsum dolor sit amet consectetur. Dui ac lacus risus elit tellus integer placerat massa. Velit felis suscipit ut sit. Faucibus amet eros cursus lectus nibh pellentesque ac euismod. Nulla nisl sapien sit pellentesque lorem tortor cursus vitae dolor. Dolor eu aliquam mattis scelerisque vivamus suscipit magna orci adipiscing. Id et imperdiet turpis vel ac massa lorem et et. Pellentesque tellus nisl tincidunt nisl bibendum pretium vitae egestas. Ipsum condimentum et purus faucibus quam lorem condimentum morbi. Sit facilisi in vulputate arcu. Suscipit curabitur tellus ac et orci lorem nunc. Purus pharetra eleifend tristique ornare. Suspendisse sed eu est sit vitae non. Sed imperdiet in tortor ullamcorper. Eget a ac nulla auctor nibh egestas. Cursus quis mi massa ultricies volutpat dolor suspendisse lacus tempus. Arcu dolor morbi quis aliquet vestibulum. Fermentum sem volutpat sed fringilla.
+                    Há mais de dez anos realizando procedimentos endoscópicos buscamos proporcionar a nossos pacientes segurança, por termos não só uma equipe competente como também, estarmos localizados dentro de dois hopsitais referências em Natal, a Promater e a Casa de Saúde São Lucas. Por termos essa retaguarda, também podemos proporcionar mais conforto a nossos pacientes tendo em vista a proximidade com atendimentos de urgência e demais profissionais especializados. Nossa equipe multidisciplinar que engloba endoscopistas, anestesistas e técnicos de enfermaegm, juntamente com nossos recepcionistas prezam por um atendimento respeitoso e humanizado, levando sempre em consideração que os pacientes estão em jejum e precisam ter o atedimento na hora marcada e com maior acolhimento possivel. Por fim, gostaráimos de destacar nossa preocupação pela busca de equipamentos seguros e validados pelos Conselhos para trazer diagnósticos cada vez mais precisos.
                 </p>
             </div>
         </section>

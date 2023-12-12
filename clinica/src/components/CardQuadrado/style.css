@@ -13,14 +13,14 @@
 #cardQuadrado p {
     color: black;
     text-align: center;
-    font-weight: 300;
+    font-weight: 500!important;
 }
 
 
 #cardQuadrado h3 {
     color: #86AE8E;
-    font-weight: 700;
-    font-size: 1.5rem;
+    font-weight: bold;
+    font-size: 1.8rem;
     text-align: center;
     padding-bottom: 15px;
 }
@@ -31,7 +31,8 @@
     margin: auto;
 }
 
-@media (max-width: 945px) {
+@media (max-width: 1200px) {
+    
     #cardQuadrado {
         width: 200px;
         height: 250px;
@@ -49,8 +50,18 @@
     }
 }
 
-@media (max-width: 630px) {
+@media (max-width: 800px) {
     #cardQuadrado {
         margin-bottom: 10px;
     }
+}
+
+#quadrado {
+    width: 80%;
+    height: 15px;   
+    border-radius: 10px;
+    background: #4D7473;
+    margin-left: 10%;
+    margin-top: 25px;
+    margin-bottom: 50px;
 }
