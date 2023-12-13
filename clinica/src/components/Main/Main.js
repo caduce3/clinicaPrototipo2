@@ -3,9 +3,9 @@ import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import CardCircle from '../CardCircle/CardCircle';
 import CardQuadrado from '../CardQuadrado/CardQuadrado';
-import CardImagem from '../CardImagem/CardImagem';
 import './style.css';
 import Modal from '../Modal/Modal';
+import Equipe from '../Equipe/Equipe';
 
 function Main() {
     
@@ -158,32 +158,53 @@ function Main() {
             </div>
         </section>
 
-        <section id='section4-main'>
-            <h2 className='text-white '>
-                    Lorem ipsum dolor sit <br/>
-                    amet consectetur.
-            </h2>
-            <div style={{display: 'flex', }} id='section4-p2-main'>  
-                <CardImagem src='/dt1.png' alt='Médico 1' titulo='Lorem ipsum' texto='Lorem ipsum dolor'/>
-                <CardImagem src='/dt2.png' alt='Médico 2' titulo='Lorem ipsum' texto='Lorem ipsum dolor'/>
-                <CardImagem src='/dt3.png' alt='Médico 3' titulo='Lorem ipsum' texto='Lorem ipsum dolor'/>
-                <CardImagem src='/dt4.png' alt='Médico 4' titulo='Lorem ipsum' texto='Lorem ipsum dolor'/>
-            </div>
-        </section>
+        <div>
+            <Equipe src='/equipe.jpg'/>
+        </div>
 
         <section id='section5-main' style={{ display: 'flex', alignItems: 'center', }}>
             <div>
-                <Image src='/clinicaDentro.png' alt='Doutores' width={730} height={1080}/>
+                <Image src='/clinicaDentro.png' alt='Parte interna clínica endos unicade promater' width={730} height={1080}/>
             </div>
             <div id='section5-p2-main' style={{ paddingLeft: '5vw', paddingRight: '5vw' }}>
                 <h2>
-                    Lorem ipsum dolor sit <br/>
-                    amet consectetur.
+                    Clinica Endos <br/>
+                    Unidade Promater
                 </h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur. Dui ultricies iaculis et morbi. Fringilla cursus scelerisque vestibulum facilisi blandit rutrum. Mauris etiam amet amet 
+                    Agende seu exame na nossa unidade no hospital da Promater. Nossa clínica fica localizada no primeiro andar a direita da escada principal! <br></br>
+                    Contamos com uma recepção própria e uma sala de espera para pacientes e acompanhantes
                 </p>
             </div>
+        </section>
+        <section id='section4-main'>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15876.908253750233!2d-35.2165138!3d-5.8235721!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b2fff606639cc7%3A0x669e23c1a8eb7d32!
+                2sCl%C3%ADnica%20Endos%2C%20endoscopia%20diagn%C3%B3stica%20e%20terap%C3%AAutica%20%7C%20Unidade%20Promater!5e0!3m2!1spt-BR!2sbr!4v1701459404596!5m2!1spt-BR!2sbr" width=
+                "600" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style={{borderRadius: "10px"}}>
+
+            </iframe>
+        </section>
+        <section id='section5-main' style={{ display: 'flex', alignItems: 'center', }}>
+            
+            <div id='section5-p2-main' style={{ paddingLeft: '5vw', paddingRight: '5vw' }}>
+                <h2>
+                    Clinica Endos <br/>
+                    Unidade Casa de Saúde são Lucas
+                </h2>
+                <p>
+                    Agende seu exame na nossa unidade no hospital da Promater. Nossa clínica fica localizada no primeiro andar a direita da escada principal! <br></br>
+                    Contamos com uma recepção própria e uma sala de espera para pacientes e acompanhantes
+                </p>
+            </div>
+            <div>
+                <Image src='/clinicaDentro2.jpg' alt='Parte interna clínica endos são lucas' width={730} height={1080}/>
+            </div>
+        </section>
+        <section id='section4-main'>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15877.749785578326!2d-35.1999271!3d-5.7937202!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b301f4aaf73f2f%3A0xa296e6bb9b66300f!2sCl%C3%ADnica%20Endos%2C%20endoscopia%20%7 C%20Unidade%20Casa%20de%20sa%C3%BAde%20S%C3%A3o%20Lucas!5e0!3m2!1spt-BR!2sbr!4v1701460047377!5m2!1spt-BR!2sbr" width=
+                "600" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style={{borderRadius: "10px"}}>
+
+            </iframe>
         </section>
     </main>
   )

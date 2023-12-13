@@ -179,13 +179,26 @@
 
 #section4-main{
     background-color: #4D7473;
-    padding: 10% 10% 10% 10%;
+    padding: 10% 0 10% 0;
+}
+
+#section4-main iframe{
+    text-align: center;
+    margin: auto;
 }
 
 #section4-main h2 {
     font-weight: 700;
     font-size: 2.5rem;
 }
+
+@media (max-width: 800px) {
+    #section4-main iframe{
+        width: 400px;
+        height: 400px;
+    }
+}
+
 
 @media (max-width: 945px) {
 
