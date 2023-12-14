@@ -6,11 +6,11 @@ import './style.css';
 
 
 const navigation = [
-  { name: 'Início', href: '#div-da-imagem', current: false },
-  { name: 'Exames', href: '#section2-main-div-inicial', current: false },
-  { name: 'Equipe', href: '#equipe', current: false },
-  { name: 'Unidades', href: '#section5-main', current: false },
-  { name: 'Orientações', href: '#section4-main', current: false },
+  { name: 'Início', href: '#div-da-imagem', title: 'Mostrar Início da página', current: false },
+  { name: 'Exames', href: '#section2-main-div-inicial', title: 'Mostrar Exames', current: false },
+  { name: 'Equipe', href: '#equipe', title: 'Mostrar Equipe', current: false },
+  { name: 'Unidades', href: '#section5-main', title: 'Mostrar Unidades', current: false },
+  { name: 'Orientações', href: '#section4-main', title: 'Mostrar Orientações', current: false },
 ]
 
 function classNames(...classes) {
@@ -38,21 +38,21 @@ export default function index() {
               <div id='div-geral-links'>
                 <div className="hidden sm:ml-6 sm:block" id='testea'>
                   <div className="links-menu">
-                    <a href='#div-da-imagem'>Início</a>
+                    <a href='#div-da-imagem' title='Início da página'>Início</a>
                   </div>
                   <div className="links-menu">
-                    <a href='#section2-main-div-inicial'>Exames</a>
+                    <a href='#section2-main-div-inicial' title='Parte dos Exames'>Exames</a>
                   </div>
-                  <div className="links-menu">
+                  <div className="links-menu" title='Mostrar Equipe'>
                     <a href='#equipe'>Equipe</a>
                   </div>
-                  <div className="links-menu">
+                  <div className="links-menu" title='Mostrar Unidades'>
                     <a href='#section4-main'>Unidades</a>
                   </div>
-                  <div className="links-menu">
+                  <div className="links-menu" title='Mostrar Orientações'>
                     <a href='#section4-main'>Orientações</a>
                   </div>
-                  <a href="https://github.com/caduce3" target='_blank'> 
+                  <a href="https://wa.me/5584981188466" title='Agendar consulta' target='_blank'> 
                     <button id='button-wpp'>
                       <BsWhatsapp color='#FFFFFF' className='icon-wpp'/>
                       <p>Agendar</p>
