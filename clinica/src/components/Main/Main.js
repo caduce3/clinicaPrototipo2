@@ -6,6 +6,7 @@ import CardQuadrado from '../CardQuadrado/CardQuadrado';
 import './style.css';
 import Modal from '../Modal/Modal';
 import Equipe from '../Equipe/Equipe';
+import Footer from '../Footer/Footer';
 
 function Main() {
     
@@ -206,7 +207,15 @@ function Main() {
 
             </iframe>
         </section>
+        <section>
+            <Footer src1='/logoEndos.jpg' src2='/logoInsta.jpg'/>
+            <p id='p-footer'>
+                @2023- Todos os direitos Reservados a Clínica Endos - Desenvolvido por Synapsis Marketing Médico
+            </p>
+        </section>
     </main>
+
+    
   )
 }
 

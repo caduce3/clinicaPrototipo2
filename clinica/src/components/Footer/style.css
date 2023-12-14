@@ -1,0 +1,37 @@
+#section-footer {
+    height: 300px;
+    display: flex;
+    justify-content:  space-evenly;
+    align-items: center;
+}
+
+#section-footer p, ul > li {
+    color: #4D7473;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+
+}
+
+#logoendos {
+    width: 200px;
+    height: 200px;
+}
+
+#logoinsta {
+    width: 60px;
+    height: 55px;
+    margin: auto;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    #section-footer {
+       
+        flex-direction: column;
+        height: 600px;
+    }
+    
+}

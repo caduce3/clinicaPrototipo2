@@ -178,7 +178,7 @@
 
 
 #section4-main{
-    background-color: #4D7473;
+    background-color: #86AE8E;
     padding: 10% 0 10% 0;
 }
 
@@ -252,4 +252,23 @@
         font-size: 2.5rem;
     }
 
+}
+
+#p-footer {
+    font-size: 1rem;
+    background-color: #86AE8E;
+    color: #fff;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    height: 7%;
+    padding-top: 10px;
+}
+
+@media (max-width: 850px) {
+    #p-footer {
+        height: 5%;
+        font-size: 0.8rem;
+    }
 }
