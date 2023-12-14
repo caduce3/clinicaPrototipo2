@@ -159,7 +159,7 @@ function Main() {
             </div>
         </section>
 
-        <div>
+        <div id='equipe'>
             <Equipe src='/equipe.jpg'/>
         </div>
 
