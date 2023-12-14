@@ -1,6 +1,7 @@
 import { Fragment, useRef, useState } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
 import { ExclamationTriangleIcon } from '@heroicons/react/24/outline';
+import './style.css';
 
 function Modal(props) {
   const [open, setOpen] = useState(false);
@@ -19,7 +20,7 @@ function Modal(props) {
   return (
     <div>
       {/* Botão que abre o modal */}
-      <button onClick={openModal}  style={{width: '215px', height: '20px', color: 'black'}}>saiba mais sobre o exame</button>
+      <button onClick={openModal}  style={{width: '215px', height: '20px', color: 'black'}} id='btn-mod'>saiba mais sobre o exame</button>
 
       {/* Modal */}
       <Transition.Root show={open} as={Fragment}>
@@ -57,7 +58,7 @@ function Modal(props) {
                         <h3 style={{color: "#4D7473", fontFamily: "Poppins", fontSize: "24px", fontWeight:"700", textAlign:"center"}}>{props.subtitulo}</h3>
                       </div>
                       <div className="mt-2">
-                        <p style={{color: "#4D7473", fontFamily: "Poppins", fontSize: "20px", fontWeight:"300", textAlign:"justify", paddingTop: "25px"}}>
+                        <p style={{color: "#4D7473", fontFamily: "Poppins", fontSize: "20px", fontWeight:"300", textAlign:"justify", paddingTop: "25px"}} id='p-txt'>
                           {props.texto}
                         </p>
                       </div>
