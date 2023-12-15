@@ -7,13 +7,8 @@ import { Dialog } from '@headlessui/react';
 import './style.css';
 
 
-
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
-
 export default function index() {
+
   const [openOrientacoes, setOpenOrientacoes] = useState(false);
   const cancelButtonRefOrientacoes = useRef(null);
 
@@ -78,8 +73,7 @@ export default function index() {
                 <a
                   href= '#div-da-imagem' 
                   title= 'Mostrar Início da página'
-                  className="{'bg-gray-900 text-white': 'text-verde-prototipo hover:bg-verde-prototipo hover:text-white',
-                    'block rounded-md px-3 py-2 text-base font-medium'}"
+                  className="links-mobile"
                   >
                   Início
                 </a>
@@ -88,8 +82,7 @@ export default function index() {
                   href= '#section2-main-div-inicial' 
                   title= 'Mostrar Exames'
                   
-                  className="{'bg-gray-900 text-white': 'text-verde-prototipo hover:bg-verde-prototipo hover:text-white',
-                    'block rounded-md px-3 py-2 text-base font-medium'}"
+                  className="links-mobile"
                   >
                   Exames
                 </a>
@@ -98,8 +91,7 @@ export default function index() {
                   href= '#equipe' 
                   title= 'Mostrar equipe'
                   
-                  className="{'bg-gray-900 text-white': 'text-verde-prototipo hover:bg-verde-prototipo hover:text-white',
-                    'block rounded-md px-3 py-2 text-base font-medium'}"
+                  className="links-mobile"
                   >
                   Equipe
                 </a>
@@ -108,8 +100,7 @@ export default function index() {
                   href= '#section5-main' 
                   title= 'Mostrar unidades'
                   
-                  className="{'bg-gray-900 text-white': 'text-verde-prototipo hover:bg-verde-prototipo hover:text-white',
-                    'block rounded-md px-3 py-2 text-base font-medium'}"
+                  className="links-mobile"
                   >
                   Unidades
                 </a>
@@ -118,8 +109,7 @@ export default function index() {
                   style={{cursor: "pointer"}}
                   title='Mostrar Orientações'
                   onClick={openModalOrientacoes}
-                  className="{'bg-gray-900 text-white': 'text-verde-prototipo hover:bg-verde-prototipo hover:text-white',
-                    'block rounded-md px-3 py-2 text-base font-medium'}"
+                  className="links-mobile"
                   >
                   Orientações
                 </a>
@@ -127,10 +117,6 @@ export default function index() {
             </div>
           </Disclosure.Panel>
           <section>
-            {/* Botão que abre o modal */}
-            {/* <button onClick={openModalOrientacoes}  style={{width: '215px', height: '20px', color: 'black'}} id='btn-mod'>ORIENTAÇÕES</button> */}
-
-            {/* Modal */}
             <Transition.Root show={openOrientacoes} as={Fragment}>
                 <Dialog as="div" className="fixed z-10 inset-0 overflow-y-auto" onClose={closeModalOrientacoes} initialFocus={cancelButtonRefOrientacoes}>
                 <div className="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
