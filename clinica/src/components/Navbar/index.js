@@ -27,14 +27,6 @@ export default function index() {
       setOpenOrientacoes(false);
   };
 
-  const navigation = [
-    { name: 'Início', href: '#div-da-imagem', title: 'Mostrar Início da página', current: false },
-    { name: 'Exames', href: '#section2-main-div-inicial', title: 'Mostrar Exames', current: false },
-    { name: 'Equipe', href: '#equipe', title: 'Mostrar Equipe', current: false },
-    { name: 'Unidades', href: '#section5-main', title: 'Mostrar Unidades', current: false },
-    { name: 'Orientações', onClick: openModalOrientacoes, title: 'Mostrar Orientações', current: false },
-  ]
-
   return (
     <Disclosure as="nav" className="bg-zinc-50 fixed z-10" id='disclosure'>
       {({ open }) => (
