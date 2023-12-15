@@ -9,7 +9,7 @@ import Equipe from '../Equipe/Equipe';
 import Footer from '../Footer/Footer';
 
 function Main() {
-    
+
     const [windowWidth, setWindowWidth] = useState(0);
 
     useEffect(() => {

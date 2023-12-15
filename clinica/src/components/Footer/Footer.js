@@ -10,7 +10,7 @@ function Footer(props) {
             <Image src={props.src1} alt='Logotipo Clínica Endos' width={400} height={380} id='logoendos' />
         </div>
         <div >
-            <p>
+            <p >
                 Acompanhe nossa rede social
             </p>
             <a href="https://www.instagram.com/endosnatal/" target='_blank'>
