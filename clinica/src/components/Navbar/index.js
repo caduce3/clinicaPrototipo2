@@ -7,7 +7,7 @@ import { Dialog } from '@headlessui/react';
 import './style.css';
 
 
-export default function index() {
+export default function Navbar() {
 
   const [openOrientacoes, setOpenOrientacoes] = useState(false);
   const cancelButtonRefOrientacoes = useRef(null);
