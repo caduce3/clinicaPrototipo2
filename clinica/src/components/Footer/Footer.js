@@ -13,7 +13,7 @@ function Footer(props) {
             <p >
                 Acompanhe nossa rede social
             </p>
-            <a href="https://www.instagram.com/endosnatal/" target='_blank'>
+            <a href="https://www.instagram.com/endosnatal/ " title='Instagram da clínica endos' target='_blank'>
                 <Image src={props.src2} alt='Logotipo Instagram' width={400} height={380} id='logoinsta' />
             </a>
 

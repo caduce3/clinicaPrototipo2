@@ -50,7 +50,7 @@ function Main() {
                     <p>
                         Há mais de dez anos realizando exames de endoscopia e colonoscopia diagnóstica e terapêutica em ambiente hospitalar. Não deixe de entrar em contato conosco para tirar suas dúvidas
                     </p>
-                    <button><a href="https://wa.me/5584981188466">Entrar em contato</a></button>
+                    <button><a href="https://wa.me/5584981188466" title='Agendar consulta'>Entrar em contato</a></button>
                 </section>
             </div>
         </section>

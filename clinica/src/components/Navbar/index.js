@@ -47,14 +47,14 @@ export default function Navbar() {
                   <div className="links-menu">
                     <a href='#section2-main-div-inicial' title='Parte dos Exames'>Exames</a>
                   </div>
-                  <div className="links-menu" title='Mostrar Equipe'>
-                    <a href='#equipe'>Equipe</a>
+                  <div className="links-menu" >
+                    <a href='#equipe' title='Mostrar Equipe'>Equipe</a>
                   </div>
-                  <div className="links-menu" title='Mostrar Unidades'>
-                    <a href='#section4-main'>Unidades</a>
+                  <div className="links-menu" >
+                    <a href='#section4-main' title='Mostrar Unidades'>Unidades</a>
                   </div>
-                  <div className="links-menu" title='Mostrar Orientações'>
-                    <a style={{cursor: "pointer"}} onClick={openModalOrientacoes}>Orientações</a>
+                  <div className="links-menu" >
+                    <a style={{cursor: "pointer"}} onClick={openModalOrientacoes} title='Mostrar Orientações'>Orientações</a>
                   </div>
                   <a href="https://wa.me/5584981188466" title='Agendar consulta' target='_blank'> 
                     <button id='button-wpp'>
@@ -74,6 +74,7 @@ export default function Navbar() {
                   href= '#div-da-imagem' 
                   title= 'Mostrar Início da página'
                   className="links-mobile"
+                  
                   >
                   Início
                 </a>
