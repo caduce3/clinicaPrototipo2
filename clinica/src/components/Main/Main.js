@@ -38,7 +38,7 @@ function Main() {
     <main>
         <section style={{ position: 'relative', height: '100vh' }}>
             <div id='div-da-imagem'>
-                <Image src="/doutores.png" alt="Dois médicos sorrindo" layout="fill" objectFit="cover" />
+                <Image src="/doutores.png" alt="Dois médicos sorrindo"  id='div-da-imagem-img' width={1920} height={1080} layout="responsive"/>
             </div>
             <div style={{ position: 'absolute', top: '70%', left: '8%', transform: 'translateY(-50%)', padding: windowWidth >= 560 ? '2rem' : '0' }}>
                 <section id="secao1-inicial">
