@@ -3,7 +3,7 @@ import './style.css';
 
 function CardQuadrado(props) {
   return (
-    <>
+    < >
         <div id="cardQuadrado">
             <div id="quadrado"></div>
             <h3>{props.subtitulo}</h3>
@@ -11,7 +11,7 @@ function CardQuadrado(props) {
                 {props.texto}
             </p>
         </div>
-    </>
+    </ >
   )
 }
 

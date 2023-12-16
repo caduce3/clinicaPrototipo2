@@ -89,6 +89,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-right: 125px;
 }
 
 @media (max-width: 950px) {
@@ -119,6 +120,9 @@
         width: 250px;
         font-size: 2rem;
     }
+    #div-cardsCircles {
+        margin-right: 70px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -148,6 +152,7 @@
     color: #86AE8E;
     padding-bottom: 5%;
     width: 100vw;
+    
 }
 
 #section3-main h2 {
@@ -174,6 +179,11 @@
     #cardQuadrado-secao3 {
         flex-direction: column;
     }
+}
+
+#cardQuadrado-secao3 {
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 

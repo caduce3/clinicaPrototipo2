@@ -53,7 +53,7 @@ function Modal(props) {
               <div className="inline-block align-middle bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
                 <div className="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
                   <div className="sm:flex sm:items-start">
-                    <div className="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
+                    <div className="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left" style={{marginRight: '18px'}}>
                       <div as="h3" className="subh3">
                         <h3 style={{color: "#4D7473", fontFamily: "Poppins", fontSize: "24px", fontWeight:"700", textAlign:"center"}}>{props.subtitulo}</h3>
                       </div>

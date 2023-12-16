@@ -69,6 +69,7 @@ function Main() {
             <div id='div-cardsCircles'>
                 <div style={{display: 'flex'}}>
                     <CardCircle 
+                       
                         subtitulo1="Endoscopia diagnóstica" 
                         subtitulo2="e terapêutica" 
                         sub1="Endoscopia digestiva alta diagnóstica e terapêutica" 
@@ -178,10 +179,10 @@ function Main() {
                 </p>
             </div>
         </section>
-        <section id='section4-main'>
+        <section >
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15876.908253750233!2d-35.2165138!3d-5.8235721!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b2fff606639cc7%3A0x669e23c1a8eb7d32!
                 2sCl%C3%ADnica%20Endos%2C%20endoscopia%20diagn%C3%B3stica%20e%20terap%C3%AAutica%20%7C%20Unidade%20Promater!5e0!3m2!1spt-BR!2sbr!4v1701459404596!5m2!1spt-BR!2sbr" width=
-                "600" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style={{borderRadius: "10px"}}>
+                "600" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style={{borderRadius: "10px", width: "100vw", height: "100vh"}}>
 
             </iframe>
         </section>
@@ -201,9 +202,9 @@ function Main() {
                 <Image src='/clinicaDentro2.jpg' alt='Parte interna clínica endos são lucas' width={730} height={1080}/>
             </div>
         </section>
-        <section id='section4-main'>
+        <section >
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15877.749785578326!2d-35.1999271!3d-5.7937202!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b301f4aaf73f2f%3A0xa296e6bb9b66300f!2sCl%C3%ADnica%20Endos%2C%20endoscopia%20%7 C%20Unidade%20Casa%20de%20sa%C3%BAde%20S%C3%A3o%20Lucas!5e0!3m2!1spt-BR!2sbr!4v1701460047377!5m2!1spt-BR!2sbr" width=
-                "600" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style={{borderRadius: "10px"}}>
+                "600" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style={{borderRadius: "10px",  width: "100vw", height: "100vh"}}>
 
             </iframe>
         </section>
